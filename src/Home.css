@@ -1,0 +1,47 @@
+.home {
+  height: 100vh; /* Full height of the viewport */
+  overflow: hidden; /* Prevent scrolling within this component */
+  display: flex;
+  flex-direction: column;
+}
+.flex-container {
+  display: flex;
+  overflow: hidden;
+}
+
+.flex-child {
+  flex: 1;
+}
+
+.inner h1 {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 30%;
+  margin-bottom: 0%;
+  font-family: Adamas, Arial, serif;
+  font-weight: 500;
+  color: blue;
+  font-size: 8rem;
+  text-align: center;
+}
+
+.inner h2 {
+  font: 600 2rem Bungee Hairline;
+  text-align: center;
+}
+
+.inner h3 {
+  font: 500 1.5rem Bungee Hairline;
+  text-align: center;
+}
+
+.svg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.flex-child:first-child {
+  margin-right: 20px;
+}
