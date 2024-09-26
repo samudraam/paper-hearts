@@ -11,12 +11,6 @@
   -webkit-text-stroke-color: white;
 }
 
-body,
-html {
-  overflow: hidden;
-  margin: 0;
-}
-
 body {
   font-family: "Bungee Hairline", -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
