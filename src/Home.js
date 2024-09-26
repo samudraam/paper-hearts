@@ -1,11 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Hearts from "./hearts.svg";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate(); 
+
+  const goToSteps = () => {
+    navigate("/steps"); 
+  };
   return (
-    <nav className="home h-screen overflow-hidden flex flex-col">
-      <div className="flex flex-row overflow-hidden">
+    <nav className="home h-screen flex flex-col">
+      <div className="flex flex-row ">
         <div className="flex-1 mr-5 bg-magenta">
           <div className="inner text-center">
             <h1 className="px-[10%] mt-[30%] mb-0 font-medium text-blue-700 text-[8rem] font-serif">
@@ -21,6 +26,13 @@ const Home = () => {
             <h3 className="font-semibold mt-[5%] text-2xl font-bungeehairline text-center">
               A How To Guide
             </h3>
+          </div>
+
+          {/* Button Below "How To Guide" */}
+          <div className="inner mt-6 text-center">
+            <button className="bg-blue-500 text-white font-extrabold py-3 px-6 rounded-full shadow-lg hover:bg-blue-600 transition duration-300">
+              Go to Steps →
+            </button>
           </div>
         </div>
 
@@ -73,8 +85,7 @@ const Home = () => {
                   />
                 </g>
               </motion.g>
-
-              <defs>{}</defs>
+              <defs></defs>
             </svg>
           </div>
         </div>
