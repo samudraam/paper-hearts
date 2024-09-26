@@ -1,25 +1,31 @@
-import "./Home.css";
+import React from "react";
 import { motion } from "framer-motion";
 import Hearts from "./hearts.svg";
 
 const Home = () => {
   return (
-    <nav className="home">
-      <div className="flex-container">
-        <div className="flex-child magenta">
-          <div className="inner">
-            <h1>PAPER HEARTS</h1>
+    <nav className="home h-screen overflow-hidden flex flex-col">
+      <div className="flex flex-row overflow-hidden">
+        <div className="flex-1 mr-5 bg-magenta">
+          <div className="inner text-center">
+            <h1 className="px-[10%] mt-[30%] mb-0 font-medium text-blue-700 text-[8rem] font-serif">
+              PAPER HEARTS
+            </h1>
           </div>
           <div className="inner">
-            <h2>Multi-Media Project</h2>
+            <h2 className="font-bold text-4xl font-bungeehairline text-center">
+              Multi-Media Project
+            </h2>
           </div>
           <div className="inner">
-            <h3>A How To Guide</h3>
+            <h3 className="font-semibold mt-[5%] text-2xl font-bungeehairline text-center">
+              A How To Guide
+            </h3>
           </div>
         </div>
 
-        <div className="flex-child green">
-          <div className="svg-container">
+        <div className="flex-1 bg-green">
+          <div className="svg-container flex justify-center items-center h-screen">
             <svg
               width="695"
               height="665"
@@ -68,113 +74,7 @@ const Home = () => {
                 </g>
               </motion.g>
 
-              <defs>
-                <filter
-                  id="filter0_d_16_7"
-                  x="87.5"
-                  y="74.5"
-                  width="607"
-                  height="589.983"
-                  filterUnits="userSpaceOnUse"
-                  colorInterpolationFilters="sRGB"
-                >
-                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha"
-                  />
-                  <feOffset dy="4" />
-                  <feGaussianBlur stdDeviation="2" />
-                  <feComposite in2="hardAlpha" operator="out" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="BackgroundImageFix"
-                    result="effect1_dropShadow_16_7"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in="SourceGraphic"
-                    in2="effect1_dropShadow_16_7"
-                    result="shape"
-                  />
-                </filter>
-                <filter
-                  id="filter1_d_16_7"
-                  x="48.5"
-                  y="36.5"
-                  width="623"
-                  height="603.189"
-                  filterUnits="userSpaceOnUse"
-                  colorInterpolationFilters="sRGB"
-                >
-                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha"
-                  />
-                  <feOffset dy="4" />
-                  <feGaussianBlur stdDeviation="2" />
-                  <feComposite in2="hardAlpha" operator="out" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="BackgroundImageFix"
-                    result="effect1_dropShadow_16_7"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in="SourceGraphic"
-                    in2="effect1_dropShadow_16_7"
-                    result="shape"
-                  />
-                </filter>
-                <filter
-                  id="filter2_d_16_7"
-                  x="0.5"
-                  y="0.5"
-                  width="637"
-                  height="608.185"
-                  filterUnits="userSpaceOnUse"
-                  colorInterpolationFilters="sRGB"
-                >
-                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha"
-                  />
-                  <feOffset dy="4" />
-                  <feGaussianBlur stdDeviation="2" />
-                  <feComposite in2="hardAlpha" operator="out" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="BackgroundImageFix"
-                    result="effect1_dropShadow_16_7"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in="SourceGraphic"
-                    in2="effect1_dropShadow_16_7"
-                    result="shape"
-                  />
-                </filter>
-              </defs>
+              <defs>{}</defs>
             </svg>
           </div>
         </div>
