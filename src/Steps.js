@@ -2543,7 +2543,8 @@ const Steps = () => {
   const handleScroll = () => {
     const scrollPosition = window.scrollY;
     const stepHeight = window.innerHeight;
-    const stepIndex = Math.round(scrollPosition / stepHeight);
+    const offset = stepHeight / 4;
+    const stepIndex = Math.floor((scrollPosition + offset) / stepHeight);
     setCurrentStep(stepIndex);
   };
 
@@ -2556,7 +2557,7 @@ const Steps = () => {
 
   return (
     <div className="scroll-container flex flex-col items-center justify-center min-h-screen">
-      <header className="text-9xl text-center text-blue-900 tracking-[19.2px] max-md:max-w-full max-md:text-4xl mt-10 font-serif">
+      <header className="text-9xl text-center text-blue-900 tracking-[19.2px] max-md:max-w-full max-md:text-4xl mt-10">
         <h1>PAPER HEART STEPS</h1>
       </header>
       {steps.map((step, index) => (
