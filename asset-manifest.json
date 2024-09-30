@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/paper-hearts/static/css/main.42a4d8e8.css",
-    "main.js": "/paper-hearts/static/js/main.0afbec00.js",
+    "main.css": "/paper-hearts/static/css/main.74ff8281.css",
+    "main.js": "/paper-hearts/static/js/main.4c43442c.js",
     "static/media/logo.svg": "/paper-hearts/static/media/logo.b611a3b1083f7f2a220717e8832ede20.svg",
     "index.html": "/paper-hearts/index.html",
-    "main.42a4d8e8.css.map": "/paper-hearts/static/css/main.42a4d8e8.css.map",
-    "main.0afbec00.js.map": "/paper-hearts/static/js/main.0afbec00.js.map"
+    "main.74ff8281.css.map": "/paper-hearts/static/css/main.74ff8281.css.map",
+    "main.4c43442c.js.map": "/paper-hearts/static/js/main.4c43442c.js.map"
   },
   "entrypoints": [
-    "static/css/main.42a4d8e8.css",
-    "static/js/main.0afbec00.js"
+    "static/css/main.74ff8281.css",
+    "static/js/main.4c43442c.js"
   ]
 }
