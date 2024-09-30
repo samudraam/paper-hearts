@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
 
   const goToSteps = () => {
-    navigate("/steps"); 
+    navigate("/paper-hearts/steps");
   };
   return (
     <nav className="home h-screen flex flex-col">
@@ -28,9 +28,11 @@ const Home = () => {
             </h3>
           </div>
 
-          {/* Button Below "How To Guide" */}
           <div className="inner mt-6 text-center">
-            <button className="bg-blue-500 text-white font-extrabold py-3 px-6 rounded-full shadow-lg hover:bg-blue-600 transition duration-300">
+            <button
+              className="bg-blue-500 text-white font-extrabold py-3 px-6 rounded-full shadow-lg hover:bg-blue-600 transition duration-300"
+              onClick={goToSteps}
+            >
               Go to Steps →
             </button>
           </div>

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Navbar = () => {
   return (
-    <nav className="navbar sticky top-0 z-1000 bg-black h-[90px]">
+    <nav className="navbar sticky top-0 z-1000 bg-black h-[90px] z-50">
       <div className="container mx-auto px-4 flex justify-between items-center h-full">
         <div className="logo flex items-center text-white m-auto p-2">
           <motion.img
