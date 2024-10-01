@@ -8,38 +8,51 @@ const Home = () => {
   const goToSteps = () => {
     navigate("/paper-hearts/steps");
   };
+  const goToVideo = () => {
+    window.open("https://www.youtube.com/watch?v=7-sFsBGntag", "_blank");
+  };
+
   return (
     <nav className="home h-screen flex flex-col">
-      <div className="flex flex-row ">
-        <div className="flex-1 mr-5 bg-magenta">
+      {/* Adjust flex direction based on screen size */}
+      <div className="flex flex-col md:flex-row w-full h-full">
+        {/* Left Section */}
+        <div className="flex-1 mr-5 bg-magenta p-6 md:p-10">
           <div className="inner text-center">
-            <h1 className="px-[10%] mt-[30%] mb-0 font-medium text-blue-700 text-[8rem] font-serif">
+            <h1 className="px-[10%] mt-[10%] mb-0 font-medium text-blue-700  md:text-[6rem] lg:text-[8rem] text-[5rem] font-serif">
               PAPER HEARTS
             </h1>
           </div>
-          <div className="inner">
+          <div className="inner mt-6">
             <h2 className="font-bold text-4xl font-bungeehairline text-center">
               Multi-Media Project
             </h2>
           </div>
-          <div className="inner">
+          <div className="inner mt-6">
             <h3 className="font-semibold mt-[5%] text-2xl font-bungeehairline text-center">
               A How To Guide
             </h3>
           </div>
 
-          <div className="inner mt-6 text-center">
+          <div className="inner mt-6 text-center flex flex-col items-center space-y-4">
             <button
-              className="bg-blue-500 text-white font-extrabold py-3 px-6 rounded-full shadow-lg hover:bg-blue-600 transition duration-300"
+              className="inline-block w-auto bg-blue-500 text-white font-extrabold py-3 px-6 rounded-full shadow-lg hover:bg-black hover:text-white transition duration-300"
               onClick={goToSteps}
             >
               Go to Steps →
             </button>
+            <button
+              className="inline-block w-auto bg-blue-500 text-white font-extrabold py-3 px-6 rounded-full shadow-lg hover:bg-black hover:text-white transition duration-300"
+              onClick={goToVideo}
+            >
+              Go to Video →
+            </button>
           </div>
         </div>
 
-        <div className="flex-1 bg-green">
-          <div className="svg-container flex justify-center items-center h-screen">
+        {/* Right Section */}
+        <div className="flex-1 bg-green p-6 md:p-10">
+          <div className="svg-container flex justify-center items-center h-full">
             <svg
               width="695"
               height="665"
